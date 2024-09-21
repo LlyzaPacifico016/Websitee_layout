@@ -1,0 +1,130 @@
+<html>
+<head>
+    <title>MY HOMEPAGE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .header {
+            background-color: green;
+            text-align: left;
+            color: black; 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .nav {
+            text-align: right;
+        }
+        .nav a {
+            margin: 0 15px;
+            color: black;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .description {
+            max-width: 600px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #004D40;
+            margin-bottom: 20px;
+        }
+        .description h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+        }
+        .image {
+            max-width: 100%;
+        }
+        .image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: green;
+            height: 50px;
+            text-align: center;
+            color: white;
+            line-height: 50px; 
+        }
+
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .description {
+                max-width: 50%;
+            }
+            .nav a {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+            .description {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SUNFLOWER</h1>
+            <div class="nav">
+                <a href="#">home</a>
+                <a href="#">about us</a>
+                <a href="#">contact us</a>
+                <a href="#">sign in</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="description">
+                <center><h2>"Sunflower"</h2></center>
+                <p>Sunflower
+
+                Golden petals reach for the sky,  
+                Brightening fields as days go by.  
+                In sunlit splendor, they proudly stand,  
+                Nature's artwork, perfectly planned.
+
+                With heads held high, they chase the light,  
+                Dancing softly in the warm daylight.  
+                Roots grounded deep, they sway in the breeze,  
+                Whispering secrets through rustling leaves.
+
+                A symbol of warmth, of joy, and cheer,  
+                In every bloom, a message clear:  
+                Embrace the sun, let your spirit soar,  
+                Like a sunflower, always wanting more.</p>
+            </div>
+            <div class="image">
+                <img src="pic1.jpg" alt="Sunflower">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
